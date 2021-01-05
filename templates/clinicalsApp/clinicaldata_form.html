@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <title>Create Data Createion</title>
+  </head>
+  <body>
+    <div class="control-container">
+      <div class="content">
+        <h2>Patient Details</h2>
+        Name: {{patient.name}} Age: {{patient.age}} Gender: {{patient.gender}}
+        <h2>Animal Model Data:</h2>
+      </div>
+      <div class="control-group">
+        <form method="post">
+          <!-- <table>
+        {{form.as_table}}
+      </table> -->
+          <div class="field">
+            <label class="label">Component Name</label>
+            <div class="control">
+              {{form.componentName}}
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Anime Model</label>
+            <div class="control">
+              {{form.animalModel}}
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Motor Behavior</label>
+            <div class="control">
+              {{form.motorbehavior}}
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Neuron Loss</label>
+            <div class="control">
+              {{form.neuronLoss}}
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Striatal Loss</label>
+            <div class="control">
+              {{form.striatalLoss}}
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Lewy Body</label>
+            <div class="control">
+              {{form.lewyBody}}
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Model</label>
+            <div class="control">
+              {{form.model}}
+            </div>
+          </div>
+          <input type="submit" class="button" value="Save" />
+          {%csrf_token%}
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <title>Create Animal Model</title>
+  </head>
+  <body>
+    <h2 class="title">Create Animal Model</h2>
+    <form method="post">
+      <div class="control-container">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            {{form.name}}
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Age</label>
+          <div class="control">
+            {{form.age}}
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Gender</label>
+          <div class="control">
+            {{form.gender}}
+          </div>
+        </div>
+        <input type="submit" value="save" class="button" />
+      </div>
+      <!-- {{ form.as_p }}  -->
+
+      {%csrf_token %}
+
+      <!-- <table>
+        {{form.as_table}} {%csrf_token %}
+      </table> -->
+    </form>
+  </body>
+</html>

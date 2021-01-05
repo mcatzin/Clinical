@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <title>Delete Animal Model</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Delete patient {{patient.name}}</h2>
+      <form method="post">
+        <input class="button" type="submit" name="Confirm" />
+        <a class="button" href="/">Cancel</a>
+        {%csrf_token %}
+      </form>
+    </div>
+  </body>
+</html>

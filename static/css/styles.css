@@ -1,0 +1,125 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 15px auto;
+  font-size: 1rem;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #e2791d;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #e2791d;
+}
+
+.content-table tbody tr:active-row {
+  font-weight: bold;
+  color: #e2791d;
+}
+
+input[type="text"],
+select {
+  width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.button {
+  background-color: #e2791d; /* Green */
+  border: none;
+  margin-top: 12px;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.title {
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.field {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.control-container {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.center {
+  margin: 0 auto;
+}
+.context {
+  text-align: center;
+  padding: 15px;
+}
+.content {
+  margin-bottom: 40px;
+  border-bottom-width: 2px;
+  border-bottom-color: lightgray;
+  border-bottom-style: solid;
+}
+.main-btn {
+  margin-left: 9.6rem;
+}
+#id_age {
+  width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
